@@ -166,54 +166,6 @@ Velocity probe:
 probe = nn.Linear(input_dim, 2)
 ```
 
-Gravity probe:
-
-```python
-gravity_probe = nn.Linear(input_dim, 1)
-```
-
----
-
-## Outputs
-
-After execution, the following files are generated:
-
-### Sample Frames
-Shows input frames used for analysis.
-
-```text
-sample_frames.png
-```
-
-### Probe Training Loss
-Training curves for velocity and gravity probes.
-
-```text
-probe_training_loss.png
-```
-
-### Velocity Prediction Plot
-Scatter plot comparing predicted vs ground-truth velocity.
-
-```text
-velocity_probe_plot.png
-```
-
-### Gravity Prediction Plot
-Scatter plot comparing predicted vs ground-truth acceleration.
-
-```text
-gravity_probe_plot.png
-```
-
-### Future Video Prediction
-Generated future frames/video.
-
-```text
-predicted_future.mp4
-```
-
----
 
 ## Results
 
@@ -221,15 +173,11 @@ predicted_future.mp4
 - V-JEPA latent space shows **partial motion understanding**
 - Velocity information (**vx, vy**) is encoded to some extent
 
-### Gravity Understanding
-- Gravity-related acceleration is **not strongly encoded**
-- Linear probing suggests weaker representation of higher-order physical dynamics
-
----
 
 ## Future Work
 
 - Improve motion probing with temporal transformers
+- Add gravity probe
 - Compare **V-JEPA vs I-JEPA**
 - Use longer video sequences
 - Investigate physics-aware latent representations
